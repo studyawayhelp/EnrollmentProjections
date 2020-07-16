@@ -6,7 +6,7 @@ from tbl_Applications participation
 where
 Program_Term in ('Fall') and Program_Year in ('2020')
 and Program_Type_ID in (6)
-and program.Group_ID in (124)
+and program.Group_ID in (104,103,124)
 and [Program_Name] not like '%Test%'
 and [Application_Status] not like '%withdrawn%'
 and [Application_Status] not like '%rejected%'

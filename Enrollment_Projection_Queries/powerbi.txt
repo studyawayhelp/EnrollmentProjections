@@ -1,0 +1,5 @@
+isMissingMinEnrollment = IF(RELATED('FA 20'[Min. Enrollment])==0, 0, IF(ISBLANK(RELATED('FA 20'[Min. Enrollment])),1,2))
+
+isSufficientEnrollment = If(FallEP[isMissingMinEnrollment] = 0, 0, If(FallEP[isMissingMinEnrollment] ==1,1, IF([committed]<RELATED('FA 20'[Min. Enrollment]),2,3)))
+
+
